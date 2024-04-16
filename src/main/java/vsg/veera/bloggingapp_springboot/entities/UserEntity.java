@@ -12,9 +12,11 @@ import org.springframework.lang.Nullable;
 @Entity(name = "users")
 @Data
 @RequiredArgsConstructor
+@AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
+@Builder
 public class UserEntity {
 
     @Id
@@ -33,5 +35,6 @@ public class UserEntity {
 
     @Nullable
     String image;
+
 
 }

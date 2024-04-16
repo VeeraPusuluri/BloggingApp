@@ -6,4 +6,5 @@ import vsg.veera.bloggingapp_springboot.entities.CommentEntity;
 
 @Repository
 public interface CommentRepository extends JpaRepository<CommentEntity, Long> {
+    
 }

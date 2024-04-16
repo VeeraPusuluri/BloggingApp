@@ -7,4 +7,6 @@ import vsg.veera.bloggingapp_springboot.entities.CommentEntity;
 
 @Repository
 public interface ArticleRepository extends JpaRepository<ArticleEntity, Long> {
+
+    ArticleEntity findArticleBySlug(String slug);
 }
