@@ -24,7 +24,7 @@ public class UserEntity {
     @Column(nullable = false)
     private Long id;
 
-    @Nullable
+    @NonNull
     String userName;
 
     @NonNull

@@ -4,8 +4,11 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import vsg.veera.bloggingapp_springboot.entities.UserEntity;
 
+import javax.swing.text.html.Option;
+import java.util.Optional;
+
 @Repository
 public interface UserRepository extends JpaRepository<UserEntity, Long> {
 
-    UserEntity findByUserName(String username);
+    Optional<UserEntity> findByUserName(String username);
 }
